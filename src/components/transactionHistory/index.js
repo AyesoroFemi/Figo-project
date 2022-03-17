@@ -1,0 +1,1 @@
+export { TransHistory as default } from "./TranHistory"
