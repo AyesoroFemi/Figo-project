@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
-
 export const DashboardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
+
+  @media screen and (max-width:991px) {
+    grid-template-columns: 20% 80%;
+    }
+
+    @media screen and (max-width: 579px) {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const DashboardMain = styled.div`
@@ -67,8 +75,6 @@ export const AccountSession = styled.div`
    }
 `
 
-
-
 export const CardContent = styled.div`
   display: flex;
   justify-content: space-between;
@@ -89,6 +95,15 @@ export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 20px;
+
+  @media screen and (max-width:991px) {
+    grid-template-columns:  2fr 1fr;
+    }
+
+    @media screen and (max-width: 579px) {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const IconWrapper = styled.div`

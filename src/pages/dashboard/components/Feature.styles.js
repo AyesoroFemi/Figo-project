@@ -9,6 +9,15 @@ export const FeatureContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
+
+  @media screen and (max-width:991px) {
+    grid-template-columns: 1fr 1fr 1fr
+    }
+
+    @media screen and (max-width: 579px) {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const CardBox = styled.div`
@@ -45,5 +54,3 @@ export const Icon = styled.div`
 export const CardContent = styled.div`
  height: 120px;
 `
-
-
