@@ -38,7 +38,7 @@ export const CardBox = styled.div`
     p{
         margin-top: -1rem;
         text-align: center;
-        background-color:gray;
+        background-color:#b8b7b7;
         /* margin-bottom: -1rem; */
         border-bottom-left-radius:7px;
         border-bottom-right-radius:7px;

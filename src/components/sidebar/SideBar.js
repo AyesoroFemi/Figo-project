@@ -1,11 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { IoIosSend } from "react-icons/io";
-import { FaPiggyBank } from "react-icons/fa";
-import { FaWallet } from "react-icons/fa";
-import { HiShoppingCart } from "react-icons/hi";
-import { NavItem } from "./components/NavItem";
-
 import { Container, NavWrapper } from "./SideBar.syles";
 
 export const SideBar = () => {
@@ -32,10 +26,38 @@ export const SideBar = () => {
           <box-icon type='solid' size="30px" name='florist'></box-icon>
           <span>Get Loans</span>
         </NavLink>
-        <NavItem icon={<IoIosSend size={25} />} iconName="Transfer Money" />
-        <NavItem icon={<FaPiggyBank size={25} />} iconName="Save Money" />
-        <NavItem icon={<FaWallet size={25} />} iconName="Wallet" />
-        <NavItem icon={<HiShoppingCart size={25} />} iconName="Pay Later" />
+
+        <NavLink
+          className="nav"
+          to="/transfer-money"
+        >
+          <box-icon type='solid' size="30px" name='send'></box-icon>
+          <span>Transfer Money</span>
+        </NavLink>
+
+        <NavLink
+          className="nav"
+          to="/save-money"
+        >
+            <box-icon name='bank' size="30px" type='solid' ></box-icon>
+          <span>Save Money</span>
+        </NavLink>
+        <NavLink
+          className="nav"
+          to="/wallet"
+        >
+          <box-icon name='wallet' size="30px"  type='solid' ></box-icon>
+          <span>Wallet</span>
+        </NavLink>
+
+        <NavLink
+          className="nav"
+          to="/pay-later"
+        >
+          <box-icon name='cart' size="30px" type='solid' ></box-icon>
+          <span>Pay Later</span>
+        </NavLink>
+
       </NavWrapper>
     </Container>
   );

@@ -26,8 +26,6 @@ export const Nav = styled.div`
         height: 50px;
         border-radius: 50%;
         background-color: gray;
-        z-index:10;
-        /* border: 3px solid red; */
     }
 
     .activeStep{
@@ -38,6 +36,8 @@ export const Nav = styled.div`
         height: 50px;
         border-radius: 50%;
         background: green;
+        z-index:10;
+        position: relative;
     }
 
     @media screen and (max-width:991px) {

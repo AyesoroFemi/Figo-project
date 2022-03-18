@@ -1,0 +1,1 @@
+export { PayLater as default } from "./PayLater";

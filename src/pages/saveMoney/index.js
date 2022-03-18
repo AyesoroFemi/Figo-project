@@ -1,0 +1,1 @@
+export { SaveMoney as default } from "./SaveMoney";

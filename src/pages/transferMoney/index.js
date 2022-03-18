@@ -1,0 +1,1 @@
+export { TransferMoney as default } from "./TransferMoney";

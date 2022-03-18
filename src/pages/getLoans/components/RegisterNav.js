@@ -9,7 +9,10 @@ export const RegisterNav = ({ title, step }) => {
   return (
     <div>
         <div>
-          <h3>{title}</h3>
+          {step===1&&<h3>Basic Information</h3>}
+          {step===2&&<h3>Work information</h3>}
+          {step===3&&<h3>BVN Authentication</h3>}
+          
           <Nav> 
               
                 <div className={step===1?"activeStep":"step"}>
