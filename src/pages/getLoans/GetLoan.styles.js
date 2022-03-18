@@ -6,12 +6,12 @@ export const Container = styled.div`
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 
-    /* @media screen and (max-width:991px) {
-        grid-template-columns: 20% 80%;
+    @media screen and (max-width:991px) {
+        grid-template-columns: 40% 60%;
         }
 
         @media screen and (max-width: 579px) {
             margin-top: 20px;
             grid-template-columns: 1fr;
-        } */
+        }
 `

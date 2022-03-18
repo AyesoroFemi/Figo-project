@@ -1,20 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Dashboard, GetLoan } from "./pages";
-import { WorkInfo } from "./pages/getLoans/nav/WorkInfo";
-import { BvnInfo } from "./pages/getLoans/nav/Bvn";
+import Dashboard from "./pages/dashboard"
+import GetLoan from "./pages/getLoans"
 
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/get-loan" element={<GetLoan />} />
-        <Route path="/work" element={<WorkInfo />} />
-        <Route path="/bvn" element={<BvnInfo />} />
-      </Routes>
-    </Router>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="get-loan" element={<GetLoan />} />
+          </Routes>
+        </Router>
   );
 }
 

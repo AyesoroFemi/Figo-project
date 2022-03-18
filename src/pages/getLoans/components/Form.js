@@ -9,9 +9,13 @@ import {
     FormDate,
     NextButton,
   } from "./Form.styles";
-export const Forms = () => {
+  import {BvnInfo} from "./BvnInfo"
+  import {WorkInfo} from "./WorkInfo"
+export const Forms = ({setStep, step}) => {
     return (
-        <form>
+        <>
+        
+        {step===1&&<form>
             <FormContainer>
             <FormInput>
                 <label htmlFor="">
@@ -69,9 +73,12 @@ export const Forms = () => {
                     rows="7"
                 />
                 </FormInput>
-                <NextButton>Next</NextButton>
+                <NextButton onClick={()=>setStep(2)}>Next</NextButton>
             </FormDate>
             </FormWrapper>
-      </form>
+      </form>}
+      {step===2&&<WorkInfo setStep={setStep}/>}
+     {step===3 &&<BvnInfo setStep={setStep}/>}
+      </>
     )
 }

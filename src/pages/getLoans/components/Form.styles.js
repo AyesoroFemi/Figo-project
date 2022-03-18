@@ -5,6 +5,10 @@ export const FormContainer = styled.div`
    grid-template-columns: 1fr 1fr;
    gap: 50px;
    margin-top: 2rem;
+
+   @media screen and (max-width:991px) {
+    grid-template-columns: 1fr;
+    }
 `
 
 export const FormInput = styled.div`
@@ -26,6 +30,15 @@ export const FormWrapper = styled(FormInput)`
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 50px;
+
+   @media screen and (max-width:991px) {
+    grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 579px) {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
 `
 export const FormSelect = styled(FormWrapper)`
    margin-top: 1rem;
@@ -33,6 +46,10 @@ export const FormSelect = styled(FormWrapper)`
 `
 export const FormDate = styled.div`
     margin-top: 1rem;
+
+    @media screen and (max-width:991px) {
+        margin-top: 2rem;
+    }
 `
 export const Button = styled.button`
     width: 100%;
@@ -51,7 +68,7 @@ export const StyledButton = styled(Button)`
    border: 2px solid #ccc;
 `
 export const NextButton = styled(Button)`
-   margin-top: 3rem;
-   width: 20%;
+   margin: 3rem 0;
+   width: 6rem;
    cursor: pointer;
 `
