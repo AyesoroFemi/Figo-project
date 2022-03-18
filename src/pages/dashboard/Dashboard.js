@@ -30,7 +30,7 @@ export const Dashboard = () => {
 
       <DashboardMain>
          <SubMain>
-         <h1>Hello Frank.</h1>
+         <h2>Hello Frank.</h2>
         <CardElement>
           <CardContent>
             <h4>Welcome to your dashboard, please complete your profile</h4>

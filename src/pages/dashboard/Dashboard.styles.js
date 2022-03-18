@@ -7,7 +7,7 @@ export const DashboardContainer = styled.div`
   font-family: 'Poppins', sans-serif;
 
   @media screen and (max-width:991px) {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 40% 60%;
     }
 
     @media screen and (max-width: 579px) {
@@ -74,6 +74,7 @@ export const AccountSession = styled.div`
        margin-right: 10px;
    }
 `
+
 
 export const CardContent = styled.div`
   display: flex;
